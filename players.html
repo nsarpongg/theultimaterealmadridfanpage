@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Current Squad – Real Madrid</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="index.html" class="logo">
+        <img src="https://i.postimg.cc/Fst182Gq/86-FEC073-E4-CB-4368-AC32-2-B64-E518-DED3.png" alt="Real Madrid Logo" class="logo-img">
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="players.html">Players</a></li>
+          <li><a href="legends.html">Legends</a></li>
+          <li><a href="#">Fan Zone</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="players-section">
+    <h2>Meet the Current Squad</h2>
+    <div class="player-cards">
+
+      <!-- Mbappé -->
+      <div class="player-card" onclick="toggleCard(this)">
+        <h3>Kylian Mbappé</h3>
+        <img src="https://i.dailymail.co.uk/1s/2025/02/19/21/95385143-14414987-image-a-35_1740001376826.jpg" alt="Kylian Mbappé" />
+        <p>Forward — One of the best ITW. Electric pace ⚡. Ruthless finisher.</p>
+        <div class="player-details hidden">
+          <p><strong>Age:</strong> 26</p>
+          <p><strong>Nationality:</strong> France</p>
+          <p><strong>Market Value:</strong> €180M</p>
+          <p><strong>Goals (2024/25):</strong> 43</p>
+          <p><strong>Assists (2024/25):</strong> 8</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/k.mbappe" target="_blank">@k.mbappe</a></p>
+        </div>
+      </div>
+
+      <!-- Bellingham -->
+      <div class="player-card" onclick="toggleCard(this)">
+        <h3>Jude Bellingham</h3>
+        <img src="https://i.postimg.cc/W1jDh3yW/IMG-1704.jpg" alt="Jude Bellingham" />
+        <p>Midfielder — Composed. Creative. Clutch performer.</p>
+        <div class="player-details hidden">
+          <p><strong>Age:</strong> 21</p>
+          <p><strong>Nationality:</strong> England</p>
+          <p><strong>Market Value:</strong> €180M</p>
+          <p><strong>Goals (2024/25):</strong> 14</p>
+          <p><strong>Assists (2024/25):</strong> 16</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/judebellingham" target="_blank">@judebellingham</a></p>
+        </div>
+      </div>
+
+      <!-- Vinícius Jr. -->
+      <div class="player-card" onclick="toggleCard(this)">
+        <h3>Vinícius Júnior</h3>
+        <img src="https://i.postimg.cc/50gyGYMY/IMG-1707.jpg" alt="Vinícius Júnior" />
+        <p>Forward — Joga Bonito. Pace. Big-game finisher.</p>
+        <div class="player-details hidden">
+          <p><strong>Age:</strong> 24</p>
+          <p><strong>Nationality:</strong> Brazil</p>
+          <p><strong>Market Value:</strong> €150M</p>
+          <p><strong>Goals (2024/25):</strong> 24</p>
+          <p><strong>Assists (2024/25):</strong> 11</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/vinijr/" target="_blank">@vinijr</a></p>
+        </div>
+      </div>
+
+      <!-- Rodrygo -->
+      <div class="player-card" onclick="toggleCard(this)">
+        <h3>Rodrygo Goes</h3>
+        <img src="https://i.postimg.cc/Nf0RkYwf/IMG-1705.jpg" alt="Rodrygo Goes" />
+        <p>Forward — Silent killer. Skillful. Clinical finisher.</p>
+        <div class="player-details hidden">
+          <p><strong>Age:</strong> 23</p>
+          <p><strong>Nationality:</strong> Brazil</p>
+          <p><strong>Market Value:</strong> €100M</p>
+          <p><strong>Goals (2024/25):</strong> 14</p>
+          <p><strong>Assists (2024/25):</strong> 9</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/rodrygogoes/" target="_blank">@rodrygogoes</a></p>
+        </div>
+      </div>
+
+      <!-- Valverde -->
+      <div class="player-card" onclick="toggleCard(this)">
+        <h3>Fede Valverde</h3>
+        <img src="https://th.bing.com/th/id/R.2752b6c750c64ba94da5e7131640dfcd?rik=NlNCixBrOdkB5g&pid=ImgRaw&r=0" alt="Fede Valverde" />
+        <p>Midfielder — Engine of the team. Leader. Rocket shot 🚀.</p>
+        <div class="player-details hidden">
+          <p><strong>Age:</strong> 27</p>
+          <p><strong>Nationality:</strong> Uruguay</p>
+          <p><strong>Market Value:</strong> €100M</p>
+          <p><strong>Goals (2024/25):</strong> 10</p>
+          <p><strong>Assists (2024/25):</strong> 8</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/fedevalverde/" target="_blank">@fedevalverde</a></p>
+        </div>
+      </div>
+
+      <!-- Courtois -->
+      <div class="player-card" onclick="toggleCard(this)">
+        <h3>Thibaut Courtois</h3>
+        <img src="https://www.si.com/.image/t_share/MTkxMTk2ODkwNDI5ODU5MDUx/imago1012330003h.jpg" alt="Thibaut Courtois" />
+        <p>Goalkeeper — Calm. Commanding. Wall in goal.</p>
+        <div class="player-details hidden">
+          <p><strong>Age:</strong> 33</p>
+          <p><strong>Nationality:</strong> Belgium</p>
+          <p><strong>Market Value:</strong> €35M</p>
+          <p><strong>Clean Sheets (2024/25):</strong> 15</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/thibautcourtois/" target="_blank">@thibautcourtois</a></p>
+        </div>
+      </div>
+
+      <!-- Tchouaméni -->
+      <div class="player-card" onclick="toggleCard(this)">
+        <h3>Aurélien Tchouaméni</h3>
+        <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/06/28/16879719486191.jpg" alt="Aurélien Tchouaméni" />
+        <p>Midfielder — Engine. Versatile. Defensive wall.</p>
+        <div class="player-details hidden">
+          <p><strong>Age:</strong> 25</p>
+          <p><strong>Nationality:</strong> France</p>
+          <p><strong>Market Value:</strong> €100M</p>
+          <p><strong>Goals (2024/25):</strong> 2</p>
+          <p><strong>Assists (2024/25):</strong> 3</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/aurelientchm/" target="_blank">@aurelientchm</a></p>
+        </div>
+      </div>
+
+      <!-- Rüdiger -->
+      <div class="player-card" onclick="toggleCard(this)">
+        <h3>Antonio Rüdiger</h3>
+        <img src="https://static01.nyt.com/athletic/uploads/wp/2025/05/30075215/GettyImages-2204184701-scaled-e1746013968552.jpg?width=1200&height=630&fit=cover" alt="Antonio Rüdiger" />
+        <p>Defender — No-nonsense defender. Warrior. Aggressive.</p>
+        <div class="player-details hidden">
+          <p><strong>Age:</strong> 33</p>
+          <p><strong>Nationality:</strong> Germany</p>
+          <p><strong>Market Value:</strong> €30M</p>
+          <p><strong>Clean Sheets (2024/25):</strong> 12</p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/toniruediger/" target="_blank">@toniruediger</a></p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Designed by Nick — Real Madrid till till, Barça deɛ sɛ Jon!</p>
+  </footer>
+
+  <script>
+    function toggleCard(card) {
+      const details = card.querySelector('.player-details');
+      details.classList.toggle('hidden');
+    }
+  </script>
+</body>
+</html>
