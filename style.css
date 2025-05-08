@@ -1,0 +1,280 @@
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #001f70;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 45px;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+  color: #fcb900;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero .overlay {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 60px 20px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 95%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.cta-btn {
+  background-color: #fcb900;
+  color: #001f70;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #ffd700;
+}
+
+/* Victory Section */
+.victory {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.victory-img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.victory h2 {
+  font-size: 30px;
+  color: #003399;
+  font-weight: 600;
+}
+
+/* Mobile Toggle */
+.mobile-menu-toggle {
+  display: none;
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: #001f70;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.mobile-menu-toggle::before {
+  content: "≡";
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Players Section */
+.players-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.players-section h2 {
+  font-size: 32px;
+  color: #001f70;
+  margin-bottom: 40px;
+}
+
+.player-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.player-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.player-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.player-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.player-card h3 {
+  margin: 10px 0 5px;
+  color: #001f70;
+  font-size: 20px;
+}
+
+.player-card p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Player Details Toggle */
+.player-details {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 14px;
+  color: #444;
+}
+
+.player-details a {
+  color: #001f70;
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  background-color: #003399;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+
+footer img {
+  height: 40px;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .cta-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+  }
+
+  .navbar nav {
+    width: 100%;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #001f70;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .navbar-links li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .navbar-links li a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .player-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player-card {
+    width: 90%;
+  }
+}
